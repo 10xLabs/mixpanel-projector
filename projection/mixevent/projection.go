@@ -4,9 +4,10 @@ import (
 	"context"
 
 	"github.com/10xLabs/chandler/projection"
+	"github.com/google/uuid"
+
 	"github.com/10xLabs/mixpanel-projector/config"
 	"github.com/10xLabs/mixpanel-projector/mixpanel"
-	"github.com/google/uuid"
 )
 
 const apiURL = "https://api.mixpanel.com/"

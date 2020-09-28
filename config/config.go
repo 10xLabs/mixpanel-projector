@@ -7,6 +7,7 @@ import (
 	"github.com/10xLabs/chandler/envdecoder"
 	cstore "github.com/10xLabs/chandler/store"
 	"github.com/10xLabs/log"
+
 	"github.com/10xLabs/mixpanel-projector/store"
 )
 

@@ -3,9 +3,10 @@ package main
 
 import (
 	"github.com/10xLabs/log"
+	"github.com/aws/aws-lambda-go/lambda"
+
 	"github.com/10xLabs/mixpanel-projector/config"
 	"github.com/10xLabs/mixpanel-projector/handler"
-	"github.com/aws/aws-lambda-go/lambda"
 )
 
 func init() {

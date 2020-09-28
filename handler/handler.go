@@ -11,6 +11,7 @@ import (
 	"github.com/10xLabs/comandler/message"
 	"github.com/10xLabs/evendipiti/booking/event"
 	"github.com/10xLabs/log"
+
 	"github.com/10xLabs/mixpanel-projector/applier"
 	"github.com/10xLabs/mixpanel-projector/config"
 	"github.com/10xLabs/mixpanel-projector/projection/booking"
