@@ -1,0 +1,508 @@
+{
+  "CompanyLineCreated": {
+    "id": "a847990b-f061-47cc-9d82-d10dbf9296d5",
+    "correlationID": "875dddf0-3dea-45ed-bc49-cd0e09be3ed6",
+    "type": "CompanyLineCreated",
+    "aggregateID": "b320eb4e-53ed-4acf-9f22-00b059f2985b",
+    "aggregateName": "CompanyLine",
+    "aggregateVersion": 1,
+    "createdAt": "2019-11-06T21:07:57.061448235Z",
+    "data": {
+      "companyID": "3003579e-d323-40b1-b207-604ea41063cc",
+      "name": "DuckBus",
+      "class": "EJECUTIVO",
+      "amenities": null,
+      "refundRules": "the rules",
+      "logoPath": "path/to/logo.png"
+    }
+  },
+  "BookingCreated": {
+    "id": "12a46d00-b31f-4b25-9e60-f2403ae0ed96",
+    "correlationID": "875dddf0-3dea-45ed-bc49-cd0e09be3ed6",
+    "type": "BookingCreated",
+    "aggregateID": "e541b52f-70b6-42bf-b7c5-6689d35ccfda",
+    "aggregateName": "Booking",
+    "aggregateVersion": 1,
+    "createdAt": "2019-11-06T21:07:57.061448235Z",
+    "data": {
+      "domain": "kolors",
+      "client": {
+        "ip": "189.216.49.215",
+        "deviceFingerprint": null,
+        "userAgent": "Safari 13.0.4",
+        "os": "Intel Mac OS X 10_15_2",
+        "source": "web",
+        "googleAnalyticsClientID": "1465335915.1579323975"
+      }
+    }
+  },
+  "BookingCreatedOnSite": {
+    "id": "66804a7c-50ed-4d90-b3e1-c40fbb6c55d0",
+    "correlationID": "875dddf0-3dea-45ed-bc49-cd0e09be3ed6",
+    "type": "BookingCreatedOnSite",
+    "aggregateID": "26c8e7be-b23c-47af-affa-7872640276ab",
+    "aggregateName": "Booking",
+    "aggregateVersion": 1,
+    "createdAt": "2019-11-06T21:07:57.061448235Z",
+    "data": {
+      "domain": "kolors",
+      "siteID": "df8b2dfe-dbbb-47d4-8f52-60188d60f295"
+    }
+  },
+  "BookingDepartureTripAdded": {
+    "id": "a847990b-f061-47cc-9d82-d10dbf9296d5",
+    "correlationID": "875dddf0-3dea-45ed-bc49-cd0e09be3ed6",
+    "type": "BookingDepartureTripAdded",
+    "aggregateID": "26c8e7be-b23c-47af-affa-7872640276ab",
+    "aggregateName": "Booking",
+    "aggregateVersion": 2,
+    "createdAt": "2019-11-06T21:07:57.061448235Z",
+    "data": {
+      "trip": {
+        "id": "fc56725a-b223-4af9-8c4f-234f6b7c2f01",
+        "segment": {
+          "id": "18feec55-0f39-4243-9076-c6bc1c1eccf7",
+          "origin": {
+            "id": "19da8769-8fc2-4d94-80e0-e12a4707ec4b",
+            "name": "origin",
+            "city": {
+              "id": "fa27aae0-0886-4d4d-94b8-0554745cdb20",
+              "name": "origin city"
+            }
+          },
+          "destination": {
+            "id": "a96642fe-a031-4ba2-bba2-c62b4c7be4f0",
+            "name": "destination",
+            "city": {
+              "id": "0dc50ac2-e156-43de-85f4-ec87a5c27229",
+              "name": "destination city"
+            }
+          },
+          "departureAt": "2019-11-06T21:07:57.061448235Z",
+          "arrivalAt": "2019-12-06T21:07:57.061448235Z",
+          "fares": [
+            {
+              "id": "2c628f98-8427-4977-809e-f9b36eb11e14",
+              "segmentID": "18feec55-0f39-4243-9076-c6bc1c1eccf7",
+              "subtotal": 15000,
+              "vat": 750,
+              "passengerType": "adult"
+            }
+          ]
+        },
+        "companyLine": {
+          "id": "b320eb4e-53ed-4acf-9f22-00b059f2985b",
+          "name": "yanicorp"
+        },
+        "routeServiceID": "d63bc0ca-950a-465d-a1df-d8e4419d1708"
+      }
+    }
+  },
+  "BookingReturnTripAdded": {
+    "id": "1a5d40b5-96f0-4dc4-a8a8-d8f199089ed5",
+    "correlationID": "875dddf0-3dea-45ed-bc49-cd0e09be3ed6",
+    "type": "BookingReturnTripAdded",
+    "aggregateID": "26c8e7be-b23c-47af-affa-7872640276ab",
+    "aggregateName": "Booking",
+    "aggregateVersion": 4,
+    "createdAt": "2019-11-06T21:07:57.061448235Z",
+    "data": {
+      "trip": {
+        "id": "9f0a3afa-fa3c-43f9-b068-64dbe58850b2",
+        "segment": {
+          "id": "18feec55-0f39-4243-9076-c6bc1c1eccf7",
+          "origin": {
+            "id": "a96642fe-a031-4ba2-bba2-c62b4c7be4f0",
+            "name": "destination",
+            "city": {
+              "id": "0dc50ac2-e156-43de-85f4-ec87a5c27229",
+              "name": "destination city"
+            }
+          },
+          "destination": {
+            "id": "19da8769-8fc2-4d94-80e0-e12a4707ec4b",
+            "name": "origin",
+            "city": {
+              "id": "fa27aae0-0886-4d4d-94b8-0554745cdb20",
+              "name": "origin city"
+            }
+          },
+          "departureAt": "2019-11-06T21:07:57.061448235Z",
+          "arrivalAt": "2019-12-06T21:07:57.061448235Z",
+          "fares": [
+            {
+              "id": "2c628f98-8427-4977-809e-f9b36eb11e14",
+              "segmentID": "18feec55-0f39-4243-9076-c6bc1c1eccf7",
+              "subtotal": 15000,
+              "vat": 750,
+              "passengerType": "adult"
+            }
+          ]
+        },
+        "companyLine": {
+          "id": "b320eb4e-53ed-4acf-9f22-00b059f2985b",
+          "name": "yanicorp"
+        },
+        "routeServiceID": "d63bc0ca-950a-465d-a1df-d8e4419d1708"
+      }
+    }
+  },
+  "BookingTicketsAdded": {
+    "id": "a88c3aaa-1a4e-44f8-8c6e-650d56f3b45c",
+    "correlationID": "875dddf0-3dea-45ed-bc49-cd0e09be3ed6",
+    "type": "BookingTicketsAdded",
+    "aggregateID": "26c8e7be-b23c-47af-affa-7872640276ab",
+    "aggregateName": "Booking",
+    "aggregateVersion": 5,
+    "createdAt": "2019-11-06T21:07:57.061448235Z",
+    "data": {
+      "tickets": [
+        {
+          "id": "46a1ce75-722c-461f-bd82-89163bbc0bf2",
+          "expiresAt": "2020-11-06T21:07:57.061448235Z",
+          "trip": {
+            "id": "fc56725a-b223-4af9-8c4f-234f6b7c2f01",
+            "segmentID": "18feec55-0f39-4243-9076-c6bc1c1eccf7"
+          },
+          "subtotal": 10000,
+          "vat": 1600,
+          "passenger": {
+            "id": "f3580ae1-9b28-4b85-b64a-4458337140f7",
+            "firstName": "First",
+            "lastName": "Last",
+            "type": "adult"
+          },
+          "seat": {
+            "id": "a7cff227-9d75-4f3e-8de5-088ea64580da",
+            "label": "01"
+          }
+        }
+      ]
+    }
+  },
+  "BookingTicketPassengerChanged": {
+    "id": "a88c3aaa-1a4e-44f8-8c6e-650d56f3b45c",
+    "correlationID": "875dddf0-3dea-45ed-bc49-cd0e09be3ed6",
+    "type": "BookingTicketPassengerChanged",
+    "aggregateID": "26c8e7be-b23c-47af-affa-7872640276ab",
+    "aggregateName": "Booking",
+    "aggregateVersion": 5,
+    "createdAt": "2019-11-06T21:07:57.061448235Z",
+    "data": {
+      "ticket": {
+        "id": "46a1ce75-722c-461f-bd82-89163bbc0bf2",
+        "passenger": {
+          "id": "f3580ae1-9b28-4b85-b64a-4458337140f7",
+          "firstName": "Juan",
+          "lastName": "Juanes",
+          "type": "adult"
+        }
+      }
+    }
+  },
+  "BookingBuyerEmailChanged": {
+    "id": "a88c3aaa-1a4e-44f8-8c6e-650d56f3b45c",
+    "correlationID": "875dddf0-3dea-45ed-bc49-cd0e09be3ed6",
+    "type": "BookingBuyerEmailChanged",
+    "aggregateID": "26c8e7be-b23c-47af-affa-7872640276ab",
+    "aggregateName": "Booking",
+    "aggregateVersion": 6,
+    "createdAt": "2019-11-06T21:07:57.061448235Z",
+    "data": {
+      "buyer": {
+        "email": "f@l.com"
+      }
+    }
+  },
+  "BookingCheckedOutOnSite": {
+    "id": "a88c3aaa-1a4e-44f8-8c6e-650d56f3b45c",
+    "correlationID": "875dddf0-3dea-45ed-bc49-cd0e09be3ed6",
+    "type": "BookingCheckedOutOnSite",
+    "aggregateID": "26c8e7be-b23c-47af-affa-7872640276ab",
+    "aggregateName": "Booking",
+    "aggregateVersion": 6,
+    "createdAt": "2019-11-06T21:07:57.061448235Z",
+    "data": {
+      "domain": "kolors",
+      "siteID": "df8b2dfe-dbbb-47d4-8f52-60188d60f295",
+      "tickets": [
+        {
+          "id": "46a1ce75-722c-461f-bd82-89163bbc0bf2",
+          "trip": {
+            "id": "fc56725a-b223-4af9-8c4f-234f6b7c2f01",
+            "segment": {
+              "id": "18feec55-0f39-4243-9076-c6bc1c1eccf7",
+              "origin": {
+                "id": "19da8769-8fc2-4d94-80e0-e12a4707ec4b",
+                "name": "origin"
+              },
+              "destination": {
+                "id": "a96642fe-a031-4ba2-bba2-c62b4c7be4f0",
+                "name": "destination"
+              },
+              "departureAt": "2019-11-06T21:07:57.061448235Z",
+              "arrivalAt": "2019-12-06T21:07:57.061448235Z"
+            },
+            "companyLine": {
+              "id": "b320eb4e-53ed-4acf-9f22-00b059f2985b",
+              "name": "yanicorp"
+            }
+          },
+          "passenger": {
+            "id": "f3580ae1-9b28-4b85-b64a-4458337140f7",
+            "firstName": "Juan",
+            "lastName": "Juanes",
+            "type": "adult"
+          },
+          "subtotal": 10000,
+          "vat": 1600,
+          "seat": {
+            "id": "a7cff227-9d75-4f3e-8de5-088ea64580da",
+            "label": "01"
+          }
+        }
+      ],
+      "buyer": {
+        "email": "f@l.com"
+      },
+      "payment": {
+        "amount": 9900
+      }
+    }
+  },
+  "BookingTicketsPriceChanged": {
+    "id": "3755268c-f3d0-431a-a7d2-85a75afcd7ec",
+    "correlationID": "875dddf0-3dea-45ed-bc49-cd0e09be3ed6",
+    "type": "BookingTicketsPriceChanged",
+    "aggregateID": "26c8e7be-b23c-47af-affa-7872640276ab",
+    "aggregateName": "Booking",
+    "aggregateVersion": 1,
+    "createdAt": "2020-01-01T21:07:57.061448235Z",
+    "data": {
+      "tickets": [
+        {
+          "id": "46a1ce75-722c-461f-bd82-89163bbc0bf2",
+          "subtotal": 5000,
+          "vat": 800
+        }
+      ]
+    }
+  },
+  "UserCashedOut": {
+    "id": "c8431c8d-8032-41d5-9e53-5dfd1bd81bdd",
+    "correlationID": "a138cd52-4a03-44b2-9440-0cd7bc9f89f6",
+    "type": "UserCashedOut",
+    "aggregateID": "40462f8d-a1c1-4a9e-a41d-e590f8277053",
+    "aggregateName": "User",
+    "aggregateVersion": 10,
+    "createdAt": "2020-01-01T21:07:57.061448235Z",
+    "data": {
+      "cashout": {
+        "id": "2fcc9da4-d451-4bad-a1fc-68cde71398c3",
+        "siteID": "df8b2dfe-dbbb-47d4-8f52-60188d60f295",
+        "bookingIDs": [
+          "26c8e7be-b23c-47af-affa-7872640276ab",
+          "b5fb3c99-4a27-451e-b8a4-5deb2c90b0d4",
+          "25f7571c-0011-43c6-a680-26d0825a761e",
+          "ce67b60f-6ea5-44e6-aa44-1e8d37fce29d",
+          "4aa97d78-772c-4141-95fc-eb74ec07d02b",
+          "5bf1f6b6-cae4-477f-ac2d-36933c72e847",
+          "781c535d-917c-4e9b-8c68-7328a60144a5",
+          "68f0e6eb-bd65-4df7-aa31-4928839b4e42",
+          "fc373984-9561-4e39-bf5f-cf98382b4af5",
+          "ebbfea84-a579-4c4f-9c93-8e83d491c6ed",
+          "1a1345ed-5253-41a7-b2f5-1fbd9c5c4cff",
+          "e0529e46-490e-4272-8aa7-6faeb128f4ad",
+          "97fb3ac7-dee3-4df5-bd1b-0c086a65ee22",
+          "57ba9919-7363-40cf-94b7-8e6b6a9e40dc"
+        ],
+        "totals": {
+          "cash": 200800,
+          "card": 156300
+        }
+      }
+    }
+  },
+  "SiteCreated": {
+    "id": "096afd6c-a2b8-41c9-b9d8-2e0a707af46d",
+    "correlationID": "1eaa2967-528f-41b2-a64d-80965f6d4674",
+    "type": "SiteCreated",
+    "aggregateID": "df8b2dfe-dbbb-47d4-8f52-60188d60f295",
+    "aggregateName": "Site",
+    "aggregateVersion": 1,
+    "createdAt": "2020-01-01T21:07:57.061448235Z",
+    "data": {
+      "companyID": "3003579e-d323-40b1-b207-604ea41063cc",
+      "name": "awesome site",
+      "type": "mobile",
+      "address": {
+        "line1": "Callecita",
+        "line2": "Interior A-1",
+        "city": "Guadalajara",
+        "stateCode": "JC",
+        "countryCode": "MX",
+        "zipCode": "12345"
+      },
+      "userIDs": [
+        "6d4a143d-cfce-45a6-88a0-e99a9dfdc7ea"
+      ],
+      "settings": {
+        "defaultOriginID": "6d4a143d-cfce-45a6-88a0-e99a9dfdc7ea",
+        "hasPrinter": true,
+        "payment": [
+          "cash"
+        ],
+        "saleClosingThreshold": 0,
+        "canChangePrice": true
+      }
+    }
+  },
+  "SiteNameChanged": {
+    "id": "2672360c-b675-4070-8950-36be46b1b2e7",
+    "correlationID": "9c11d717-4b65-4e05-96f3-ca7aa675c6a9",
+    "type": "SiteNameChanged",
+    "aggregateID": "df8b2dfe-dbbb-47d4-8f52-60188d60f295",
+    "aggregateName": "Site",
+    "aggregateVersion": 2,
+    "createdAt": "2020-01-01T21:07:57.061448235Z",
+    "data": {
+      "name": "super awesome site"
+    }
+  },
+  "RouteServiceCreated": {
+    "id": "e1af112d-432c-4827-9573-7e25f2557a1f",
+    "correlationID": "21edc308-f142-4134-be6c-4523c442c850",
+    "type": "RouteServiceCreated",
+    "aggregateID": "d63bc0ca-950a-465d-a1df-d8e4419d1708",
+    "aggregateName": "RouteService",
+    "aggregateVersion": 1,
+    "createdAt": "2020-01-01T21:07:57.061448235Z",
+    "data": {
+      "routeID": "6d4a143d-cfce-45a6-88a0-e99a9dfdc7ea",
+      "companyLineID": "b320eb4e-53ed-4acf-9f22-00b059f2985b",
+      "vehicleID": "6d4a143d-cfce-45a6-88a0-e99a9dfdc7ea",
+      "code": "MXNQR12",
+      "dow": [
+        "monday",
+        "wednesday",
+        "friday"
+      ],
+      "itinerary": [
+        {
+          "placeID": "6d4a143d-cfce-45a6-88a0-e99a9dfdc7ea",
+          "day": 0,
+          "departureTime": "20:30"
+        }
+      ],
+      "isDeletable": true,
+      "capacity": 40,
+      "limits": [
+        {
+          "type": "passenger",
+          "key": "senior",
+          "value": 3
+        }
+      ]
+    }
+  },
+  "BookingPaid": {
+    "id": "87e3c0f2-dba2-4a8a-be3a-b0ab98a4010b",
+    "correlationID": "96aa7767-d059-4b21-9a08-35c6379438ec",
+    "type": "BookingPaid",
+    "aggregateID": "26c8e7be-b23c-47af-affa-7872640276ab",
+    "aggregateName": "Booking",
+    "aggregateVersion": 7,
+    "createdAt": "2020-01-01T21:07:57.061448235Z",
+    "data": {
+      "payment": {
+        "id": "eb14ed78-18b6-472d-bcc8-ac7c857e50c5",
+        "authCode": "123",
+        "externalID": "CBF50",
+        "fee": 0,
+        "ticketsAmount": 1
+      }
+    }
+  },
+  "BookingConfirmed": {
+    "id": "1938c0fc-8a55-4621-ba6b-32f43fa84f67",
+    "correlationID": "c911346a-a685-441c-9a7a-029e01797578",
+    "type": "BookingConfirmed",
+    "aggregateID": "26c8e7be-b23c-47af-affa-7872640276ab",
+    "aggregateName": "Booking",
+    "aggregateVersion": 8,
+    "createdAt": "2020-01-01T21:07:57.061448235Z"
+  },
+  "TripDeactivated": {
+    "id": "9aa535d6-ad0c-4286-bde9-7f9502351cf0",
+    "correlationID": "d22ef151-83c9-4175-8011-84a96eb42c4e",
+    "type": "TripDeactivated",
+    "aggregateID": "fc56725a-b223-4af9-8c4f-234f6b7c2f01",
+    "aggregateName": "Trip",
+    "aggregateVersion": 9,
+    "createdAt": "2020-01-01T21:07:57.061448235Z"
+  },
+  "BookingPassengersAdded": {
+    "id": "8966b679-f761-4bf6-95c4-4498016beaec",
+    "correlationID": "41f8903b-ef3e-423f-b40c-064271dcc080",
+    "type": "BookingPassengersAdded",
+    "aggregateID": "26c8e7be-b23c-47af-affa-7872640276ab",
+    "aggregateName": "Booking",
+    "aggregateVersion": 3,
+    "createdAt": "2020-01-01T21:07:57.061448235Z",
+    "data": {
+      "passengers": [
+        {
+          "id": "fd7b4718-6360-4fa6-80c6-bdfac498479e",
+          "firstName": "pepe",
+          "lastName": "pecas",
+          "type": "adult"
+        }
+      ],
+      "tripIDs": [
+        "fc56725a-b223-4af9-8c4f-234f6b7c2f01"
+      ]
+    }
+  },
+  "CompanyCreated": {
+    "id": "974a038d-abd5-45e2-8b2c-57e926aa2a70",
+    "correlationID": "05d7e36e-8ae9-40f9-8de7-2f96414611e8",
+    "type": "CompanyCreated",
+    "aggregateID": "3003579e-d323-40b1-b207-604ea41063cc",
+    "aggregateName": "Company",
+    "aggregateVersion": 1,
+    "createdAt": "2020-01-01T21:07:57.061448235Z",
+    "data": {
+      "name": "company"
+    }
+  },
+  "CompanyNameChanged": {
+    "id": "52fd2970-9f72-45f7-9af8-6412b42264a4",
+    "correlationID": "dc9df4dc-0014-427e-b133-822a77ef0c9c",
+    "type": "CompanyNameChanged",
+    "aggregateID": "3003579e-d323-40b1-b207-604ea41063cc",
+    "aggregateName": "Company",
+    "aggregateVersion": 2,
+    "createdAt": "2020-01-01T21:07:57.061448235Z",
+    "data": {
+      "name": "companini"
+    }
+  },
+  "BookingTicketSeatChanged": {
+    "id": "66804a7c-50ed-4d90-b3e1-c40fbb6c55d0",
+    "correlationID": "875dddf0-3dea-45ed-bc49-cd0e09be3ed6",
+    "type": "BookingCreatedOnSite",
+    "aggregateID": "26c8e7be-b23c-47af-affa-7872640276ab",
+    "aggregateName": "Booking",
+    "aggregateVersion": 1,
+    "createdAt": "2019-11-06T21:07:57.061448235Z",
+    "data": {
+      "ticket": {
+        "id": "46a1ce75-722c-461f-bd82-89163bbc0bf2",
+        "seat": {
+          "id": "2412bae7-8859-4636-ab63-0fe4464946eb",
+          "label": "23"
+        }
+      }
+    }
+  }
+}
