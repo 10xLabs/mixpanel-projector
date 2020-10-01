@@ -14,7 +14,7 @@ github.com/10xLabs/chandler/tracer
 ## explicit
 github.com/10xLabs/comandler/message
 github.com/10xLabs/comandler/message/dto
-# github.com/10xLabs/evendipiti v1.11.0
+# github.com/10xLabs/evendipiti v1.12.0
 ## explicit
 github.com/10xLabs/evendipiti/booking/event
 # github.com/10xLabs/log v1.0.4
@@ -34,7 +34,8 @@ github.com/aws/aws-lambda-go/lambda
 github.com/aws/aws-lambda-go/lambda/handlertrace
 github.com/aws/aws-lambda-go/lambda/messages
 github.com/aws/aws-lambda-go/lambdacontext
-# github.com/aws/aws-sdk-go v1.34.25
+# github.com/aws/aws-sdk-go v1.35.1
+## explicit
 github.com/aws/aws-sdk-go/aws
 github.com/aws/aws-sdk-go/aws/awserr
 github.com/aws/aws-sdk-go/aws/awsutil
@@ -90,24 +91,25 @@ github.com/aws/aws-xray-sdk-go/xray
 github.com/aws/aws-xray-sdk-go/xraylog
 # github.com/go-stack/stack v1.8.0
 github.com/go-stack/stack
-# github.com/golang/snappy v0.0.1
+# github.com/golang/snappy v0.0.2
+## explicit
 github.com/golang/snappy
 # github.com/google/uuid v1.1.2
 ## explicit
 github.com/google/uuid
-# github.com/jmespath/go-jmespath v0.3.0
+# github.com/jmespath/go-jmespath v0.4.0
 github.com/jmespath/go-jmespath
-# github.com/klauspost/compress v1.9.5
+# github.com/klauspost/compress v1.11.1
+## explicit
 github.com/klauspost/compress/fse
 github.com/klauspost/compress/huff0
 github.com/klauspost/compress/snappy
 github.com/klauspost/compress/zstd
 github.com/klauspost/compress/zstd/internal/xxhash
-# github.com/konsorten/go-windows-terminal-sequences v1.0.3
-github.com/konsorten/go-windows-terminal-sequences
 # github.com/pkg/errors v0.9.1
 github.com/pkg/errors
-# github.com/sirupsen/logrus v1.6.0
+# github.com/sirupsen/logrus v1.7.0
+## explicit
 github.com/sirupsen/logrus
 # github.com/stretchr/testify v1.6.1
 ## explicit
@@ -115,7 +117,7 @@ github.com/sirupsen/logrus
 github.com/xdg/scram
 # github.com/xdg/stringprep v0.0.0-20180714160509-73f8eece6fdc
 github.com/xdg/stringprep
-# go.mongodb.org/mongo-driver v1.3.3
+# go.mongodb.org/mongo-driver v1.4.1
 ## explicit
 go.mongodb.org/mongo-driver/bson
 go.mongodb.org/mongo-driver/bson/bsoncodec
@@ -143,18 +145,25 @@ go.mongodb.org/mongo-driver/x/mongo/driver/description
 go.mongodb.org/mongo-driver/x/mongo/driver/dns
 go.mongodb.org/mongo-driver/x/mongo/driver/mongocrypt
 go.mongodb.org/mongo-driver/x/mongo/driver/mongocrypt/options
+go.mongodb.org/mongo-driver/x/mongo/driver/ocsp
 go.mongodb.org/mongo-driver/x/mongo/driver/operation
 go.mongodb.org/mongo-driver/x/mongo/driver/session
 go.mongodb.org/mongo-driver/x/mongo/driver/topology
 go.mongodb.org/mongo-driver/x/mongo/driver/uuid
 go.mongodb.org/mongo-driver/x/mongo/driver/wiremessage
-# golang.org/x/crypto v0.0.0-20190530122614-20be4c3c3ed5
+# golang.org/x/crypto v0.0.0-20201001193750-eb9a90e9f9cb
+## explicit
+golang.org/x/crypto/ocsp
 golang.org/x/crypto/pbkdf2
-# golang.org/x/sync v0.0.0-20190423024810-112230192c58
+# golang.org/x/sync v0.0.0-20200930132711-30421366ff76
+## explicit
+golang.org/x/sync/errgroup
 golang.org/x/sync/semaphore
-# golang.org/x/sys v0.0.0-20200917073148-efd3b9a0ff20
+# golang.org/x/sys v0.0.0-20200930185726-fdedc70b468f
+## explicit
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
+golang.org/x/sys/windows
 # golang.org/x/text v0.3.3
 ## explicit
 golang.org/x/text/transform

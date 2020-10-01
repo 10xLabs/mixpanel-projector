@@ -43,7 +43,7 @@ func (a *BookingApplier) Apply(ctx context.Context, e message.Event) error {
 }
 
 func (a *BookingApplier) applyBookingCreated(ctx context.Context, e event.BookingCreated) error {
-	a.SessionID = "sessionid"
+	a.SessionID = e.Data.Client.SessionID.String()
 	a.IP = e.Data.Client.IP
 
 	return nil

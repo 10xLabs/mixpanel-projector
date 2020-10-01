@@ -5,6 +5,7 @@ import (
 
 	"github.com/10xLabs/comandler/message"
 	"github.com/10xLabs/comandler/message/dto"
+	"github.com/google/uuid"
 )
 
 // BookingCreated ...
@@ -21,12 +22,13 @@ type BookingCreatedData struct {
 
 // BookingCreatedClientData ...
 type BookingCreatedClientData struct {
-	IP                      string  `json:"ip"`
-	DeviceFingerprint       *string `json:"deviceFingerprint"`
-	UserAgent               *string `json:"userAgent"`
-	OS                      *string `json:"os"`
-	Source                  string  `json:"source"`
-	GoogleAnalyticsClientID *string `json:"googleAnalyticsClientID"`
+	SessionID               uuid.UUID `json:"sessionID"`
+	IP                      string    `json:"ip"`
+	DeviceFingerprint       *string   `json:"deviceFingerprint"`
+	UserAgent               *string   `json:"userAgent"`
+	OS                      *string   `json:"os"`
+	Source                  string    `json:"source"`
+	GoogleAnalyticsClientID *string   `json:"googleAnalyticsClientID"`
 }
 
 // BookingCreatedFactory ...

@@ -76,10 +76,11 @@ type BookingPaidSeatData struct {
 // BookingPaidPaymentData ...
 type BookingPaidPaymentData struct {
 	ID            uuid.UUID `json:"id"`
-	AuthCode      string    `json:"authCode"`
-	ExternalID    string    `json:"externalID"`
+	AuthCode      *string   `json:"authCode,omitempty"`
+	ExternalID    *string   `json:"externalID,omitempty"`
 	Fee           int32     `json:"fee"`
 	TicketsAmount int       `json:"ticketsAmount"`
+	Method        string    `json:"method"`
 }
 
 // BookingPaidFactory ...
