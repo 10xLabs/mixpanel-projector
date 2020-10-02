@@ -1,0 +1,35 @@
+subscriptions:
+- aggregate: Booking
+  events:
+  - BookingCreated
+  - BookingCreatedOnSite
+  - BookingDepartureTripAdded
+  - BookingReturnTripAdded
+  - BookingBuyerEmailChanged
+  - BookingBuyerFirstNameChanged
+  - BookingBuyerLastNameChanged
+  - BookingBuyerPhoneChanged
+  - BookingBuyerMarkedAsPassenger
+  - BookingBuyerUnmarkedAsPassenger
+  - BookingPassengersAdded
+  - BookingTicketsPriceChanged
+  - BookingTicketsAdded
+  - BookingTicketRemoved
+  - BookingCheckedOutWithPayment
+  - BookingCheckedOut
+  - BookingCheckedOutOnSite
+  - BookingPaid
+  - BookingPaymentDeclined
+  - BookingTicketsConfirmed
+  - BookingConfirmed
+  - BookingReset
+  - BookingPaymentFailed
+  - BookingTicketsCancelled
+  - BookingPaidOnSite
+  - BookingTicketsReservationFailed
+  - BookingTicketsConfirmationFailed
+  - BookingTicketsPassengerChanged
+  - BookingTicketSeatChanged
+  - BookingTicketCheckedIn
+  - BookingTicketCheckedOut
+
