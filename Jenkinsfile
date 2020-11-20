@@ -63,23 +63,6 @@ pipeline {
             }
         }
 
-        stage('SandboxDeploy') {
-            agent { label "deployer"}
-            when {
-                expression { ENVIRONMENT ==~ SANDBOX_ENVIRONMENTS}
-            }
-            steps {
-                unstash PACKAGED_TEMPLATE
-                sh "aws s3 cp subgen.yaml s3://${SUBSCRIPTION_BUCKET}/sandbox/${REPO_NAME}.yaml"
-                deployLambda([
-                    name: REPO_NAME,
-                    environment: "sandbox",
-                    template: PACKAGED_TEMPLATE,
-                    params: withParameters("${DEPLOY_DIR}sandbox.sh")
-                ])
-            }
-        }
-
         stage('ProductionDeploy') {
             agent { label "deployer"}
             when {

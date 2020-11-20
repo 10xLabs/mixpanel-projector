@@ -52,7 +52,14 @@ func (a *MixeventApplier) Apply(ctx context.Context, e message.Event) error {
 }
 
 func (a *MixeventApplier) applyBookingEvent(ctx context.Context, e dto.Event) error {
-	a.Event.Properties.Data = e.Data
+	if len(e.Data) < 5000 {
+		a.Event.Properties.Data = e.Data
+	} else {
+		log.WithFields(log.Fields{
+			"data": string(e.Data),
+		}).Info("data too large")
+	}
+
 	bk, err := bookingFind(ctx, e.AggregateID)
 	if err != nil {
 		return err

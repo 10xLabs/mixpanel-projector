@@ -8,7 +8,7 @@ zip:
 	zip main.zip main
 dep:
 	make zip
-	aws lambda update-function-code --function-name staging-bookings-projector --zip-file fileb://main.zip
+	aws lambda update-function-code --function-name staging-mixpanel-projector --zip-file fileb://main.zip
 run:
 	make build
 	./runTestEvents BookingCreated

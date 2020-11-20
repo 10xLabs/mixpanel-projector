@@ -60,9 +60,11 @@ func Handler(ctx context.Context, ae awsevent.Event) error {
 			return err
 		}
 		if err := p.Project(ctx, mixeventProjection, []message.Event{e}); err != nil {
+			err2 := err.(projector.Error)
 			log.WithFields(log.Fields{
 				"aggregateID": e.AggregateID(),
-			}).WithError(err).Error("project error")
+				"err2":        err2,
+			}).WithError(err).Error("mixevent project error")
 
 			return err
 		}
@@ -72,9 +74,11 @@ func Handler(ctx context.Context, ae awsevent.Event) error {
 		}
 
 		if err := p.Project(ctx, bookingProjection, []message.Event{e}); err != nil {
+			err2 := err.(projector.Error)
 			log.WithFields(log.Fields{
 				"aggregateID": e.AggregateID(),
-			}).WithError(err).Error("project error")
+				"err2":        err2,
+			}).WithError(err).Error("booking project error")
 
 			return err
 		}
