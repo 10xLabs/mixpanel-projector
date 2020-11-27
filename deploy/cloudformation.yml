@@ -45,7 +45,6 @@ Resources:
       EventSourceArn: !GetAtt SQS.Arn
       FunctionName: !Ref Alias
       BatchSize: 10
-      MaximumRecordAgeInSeconds: 120
 
   SQS:
     Type: AWS::SQS::Queue
