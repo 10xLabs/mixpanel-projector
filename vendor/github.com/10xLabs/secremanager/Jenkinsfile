@@ -1,0 +1,9 @@
+pipeline {
+    agent none
+    stages {
+        stage('Test') {
+            agent { docker { image 'golang:1.14' } }
+            steps { goTest("0.79") }
+        }
+    }
+}
