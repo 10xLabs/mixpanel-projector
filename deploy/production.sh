@@ -2,5 +2,5 @@
 Environment=production
 
 # App
-MixpanelToken=57cd81a981c4c64cfb0d82b843587005
+MixpanelToken=4ffeb5c12abe6ef3be1edba7da0b5729
 AccessPointID=fsap-0d2c2fecfc69f60c6
